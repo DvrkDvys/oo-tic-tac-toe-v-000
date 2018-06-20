@@ -141,8 +141,7 @@ describe './lib/tic_tac_toe.rb' do
       #   expect($stdout).to receive(:puts).with("Congratulations X!")
 
       #   game.play
-      end
+      # end
     end
   end
-end
 end
