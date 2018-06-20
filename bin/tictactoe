@@ -8,4 +8,4 @@ puts "Welcome to Tic Tac Toe!"
 game = TicTacToe.new
 
 puts "Please enter 1-9:"
-play
+game.play
