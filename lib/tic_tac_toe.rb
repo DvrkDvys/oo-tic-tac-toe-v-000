@@ -5,7 +5,7 @@ class TicTacToe
   
   def turn_count
         @board.count{|token| token == "X" || token == "O"}
-    end
+    # end
   end
     # turn_count = 0 
     # @board.each do |user|
