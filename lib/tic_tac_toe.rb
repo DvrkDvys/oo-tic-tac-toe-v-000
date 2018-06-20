@@ -6,14 +6,6 @@ class TicTacToe
   def turn_count
     @board.count{|token| token == "X" || token == "O"}
   end
-  #   turn_count = 0 
-  #   @board.each do |user|
-  #     if (user == "X" || user == "O")
-  #       turn_count += 1
-  #     end
-  #   end
-  #     return turn_count
-  # end
   
   def current_player
     turn_count % 2 == 0 ? "X" : "O"
@@ -31,11 +23,6 @@ class TicTacToe
     index = user_input.to_i - 1
     return index
   end
-  
-  # def update_array_at_with(adjusted_input, current_player)
-  #   @board[adjusted_input] = current_player
-  #   # return board
-  # end
   
   def move(index, current_player="X")
     # index = input_to_index(input)
