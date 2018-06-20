@@ -4,7 +4,7 @@ class TicTacToe
   end
   
   def turn_count
-    @board.count{|token| token == "X" || token == "O"}
+     @board = @board.count{|token| token == "X" || token == "O"}
   end
   
   #   turn_count = 0 
@@ -41,6 +41,7 @@ class TicTacToe
   def move(index, current_player="X")
     # index = input_to_index(input)
     @board[index]= current_player
+    @board = @board[index]
     # update_array_at_with(adjusted_input, current_player)
     # display_board
   end
