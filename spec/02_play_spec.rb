@@ -126,22 +126,22 @@ describe './lib/tic_tac_toe.rb' do
         game.play
       end
 
-      # it 'plays through an entire game' do
-      #   game = TicTacToe.new
-      #   allow($stdout).to receive(:puts)
+      it 'plays through an entire game' do
+        game = TicTacToe.new
+        allow($stdout).to receive(:puts)
 
-      #   expect(game).to receive(:gets).and_return("1")
-      #   expect(game).to receive(:gets).and_return("2")
-      #   expect(game).to receive(:gets).and_return("3")
-      #   expect(game).to receive(:gets).and_return("4")
-      #   expect(game).to receive(:gets).and_return("5")
-      #   expect(game).to receive(:gets).and_return("6")
-      #   expect(game).to receive(:gets).and_return("7")
+        expect(game).to receive(:gets).and_return("1")
+        expect(game).to receive(:gets).and_return("2")
+        expect(game).to receive(:gets).and_return("3")
+        expect(game).to receive(:gets).and_return("4")
+        expect(game).to receive(:gets).and_return("5")
+        expect(game).to receive(:gets).and_return("6")
+        expect(game).to receive(:gets).and_return("7")
 
-      #   expect($stdout).to receive(:puts).with("Congratulations X!")
+        expect($stdout).to receive(:puts).with("Congratulations X!")
 
-      #   game.play
-      # end
+        game.play
+      end
     end
   end
 end
