@@ -31,12 +31,12 @@ class TicTacToe
     return adjusted_input
   end
   
-  def update_array_at_with(adjusted_input, current_player)
-    @board[adjusted_input] = current_player
-    # return board
-  end
+  # def update_array_at_with(adjusted_input, current_player)
+  #   @board[adjusted_input] = current_player
+  #   # return board
+  # end
   
-  def move(adjusted_input, current_player="X")
+  def move(input, current_player="X")
     index = input_to_index(input)
     @board[index]= current_player
     # update_array_at_with(adjusted_input, current_player)
@@ -60,7 +60,7 @@ class TicTacToe
   def turn
     puts "Please enter 1-9:"
     input = gets.strip
-    index = input_to_index(input)
+    # index = input_to_index(input)
     if valid_move?(index)
       current_player = current_player 
       move(index, current_player)
