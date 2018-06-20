@@ -10,7 +10,7 @@ class TicTacToe
     #   if (user == "X" || user == "O")
     #     turn_count += 1
     #   end
-    # end
+    end
     #   return turn_count
   end
   
