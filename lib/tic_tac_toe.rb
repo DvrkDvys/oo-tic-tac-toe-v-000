@@ -38,7 +38,7 @@ class TicTacToe
   
   def move(adjusted_input, current_player="X")
     index = input_to_index(input)
-    @board[index]= character
+    @board[index]= current_player
     # update_array_at_with(adjusted_input, current_player)
     # display_board
   end
